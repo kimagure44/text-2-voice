@@ -1,0 +1,73 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+input[type='text'] {
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+}
+button,
+select {
+  border: 0;
+  padding: 10px;
+  background: #3988f2;
+  color: #ffffff;
+  box-shadow: 0 0 3px 1px rgb(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+button:focus,
+input:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+button[disabled] {
+  background: #aaaaaa;
+  color: #000000;
+  cursor: not-allowed;
+}
+button i {
+  margin-right: 10px;
+}
+select {
+  padding: 9px;
+}
+.conversation {
+  width: calc(100% - 20px);
+  height: 300px;
+  box-shadow: 0 0 7px 2px rgb(0, 0, 0, 0.2);
+  margin: 15px 0;
+  padding: 10px;
+  overflow: auto;
+}
+.container-button {
+  text-align: right;
+}
+.notification {
+  width: 200px;
+  padding: 10px;
+  border-radius: 2px;
+  position: absolute;
+  left: calc(50% - 100px);
+  bottom: -100px;
+  transition: 450ms ease-in-out;
+  text-align: center;
+  line-height: 25px;
+}
+.notification.show {
+  bottom: 50px;
+  transition: 450ms ease-in-out;
+}
+.info {
+  background: #3988f2;
+  color: #ffffff;
+}
+.warning {
+  background: #fe8c8c;
+  color: #000000;
+}
+.success {
+  background: #60c356;
+  color: #000000;
+}
